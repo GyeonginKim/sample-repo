@@ -1,0 +1,10 @@
+FROM scratch
+MAINTAINER The CentOS Project <cloud-ops@centos.org>
+ADD c7-docker.tar.xz /
+LABEL name="CentOS Base Image" \
+			vendor="CentOS" \
+			license="GPLv2" \
+			build-date="2024-08-29"
+
+CMD ["/bin/bash"]
+
